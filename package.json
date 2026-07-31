@@ -4,7 +4,19 @@
   "description": "",
   "main": "attach-time-format.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "attach-time-format": "node attach-time-format.js",
+    "flush-redis-cache": "node flush-redis-cache.js",
+    "generate-interfaces": "node generate-interfaces.js",
+    "migrate:tenant": "node migrate-tenant-migrations.js",
+    "seed:api-integration-permission": "node seed-api-integration-permission.js",
+    "seed:cms-permission": "node seed-cms-permission.js",
+    "seed:missing-tenant-info": "node seed-missing-tenant-info.js",
+    "seed:release-note-permission": "node seed-release-note-permission.js",
+    "seed:saas-user-activity-permission": "node seed-saas-user-activity-permission.js",
+    "seed:support-ticket-permission": "node seed-support-ticket-permission.js",
+    "seed:tenant-branches": "node seed-tenant-branches.js",
+    "seed:user-activity-permission": "node seed-user-activity-permission.js"
   },
   "keywords": [],
   "author": "",
