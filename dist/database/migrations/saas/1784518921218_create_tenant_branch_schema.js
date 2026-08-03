@@ -24,7 +24,6 @@ async function up(db) {
         .addColumn("isDeleted", "boolean", (col) => col.notNull().defaultTo(false))
         .addColumn("deletedBy", "uuid", (col) => col.references("admins.id").onDelete("set null"))
         .addColumn("deletedAt", "timestamptz")
-        .addColumn("disableReason", "text")
         .addColumn("createdAt", "timestamptz", (col) => col.notNull().defaultTo((0, kysely_1.sql) `CURRENT_TIMESTAMP`))
         .addColumn("updatedAt", "timestamptz", (col) => col.notNull().defaultTo((0, kysely_1.sql) `CURRENT_TIMESTAMP`))
         .execute();
